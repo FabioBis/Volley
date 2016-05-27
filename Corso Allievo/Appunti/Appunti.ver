@@ -1,0 +1,22 @@
+\begin {longtable}{@{}ll>{\hsize =\vhAuthorColWidth }X>{\hsize =\vhChangeColWidth }X@{}}
+\textbf {\vhversionname }
+ & \textbf {\vhdatename }
+ & \textbf {\vhauthorname }
+ & \textbf {\vhchangename }\\[1ex]
+0.1
+ & 11/05/2016
+ & \listset {Allievi 2015/2016}
+ & Prima bozza\\
+0.2
+ & 22/05/2016
+ & \listset {Allievi 2015/2016}
+ & Bozza Modulo 1\\
+0.3
+ & 24/05/2016
+ & \listset {Allievi 2015/2016}
+ & Moduli del corso, Bozza Modulo 5\\
+0.4
+ & 25/05/2016
+ & \listset {Allievi 2015/2016}
+ & Bozza Scouts\\
+\end {longtable}
