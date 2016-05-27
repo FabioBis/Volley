@@ -226,3 +226,15 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+# Multimedia
+# =========================
+*.mp4
+
+
+# Project
+===========================
+Video/
+Corso Allievo/Materiale
+Corso Allievo/Archivio
