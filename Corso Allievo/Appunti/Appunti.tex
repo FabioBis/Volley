@@ -1,4 +1,27 @@
+\hyphenation{
+Bonfatti
+}
+
+
 \documentclass[a4paper, 12pt]{book}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% i comandi seguenti impediscono la scrittura in maiuscolo
+% dei nomi dei capitoli e dei paragrafi nelle intestazioni
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} % rimuove l’attuale contenuto dell’intestazione
+% e del pi\‘e di pagina
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt} % riserva spazio per la linea
+\fancypagestyle{plain}{%
+\fancyhead{} % ignora, nello stile plain, le intestazioni
+\renewcommand{\headrulewidth}{0pt} % e la linea
+}
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsthm}
@@ -35,8 +58,16 @@
 
 \frenchspacing
 
+
+
+\newtheorem*{ross}{Appunti (Rossetti)}
+\newtheorem*{ross_es}{Possibile argomento d'esame (Rossetti)}
+
 \theoremstyle{remark}
 \newtheorem*{nota}{Nota}
+
+\theoremstyle{definition}
+\newtheorem{defi}{Definizione}
 
 \begin{document}
 {\samepage
@@ -47,6 +78,7 @@
   \vhEntry{0.3}{24/05/2016}{Allievi 2015/2016}{Moduli del corso, Bozza Modulo 5}
   \vhEntry{0.4}{25/05/2016}{Allievi 2015/2016}{Bozza Scouts}
   \vhEntry{0.5}{27/05/2016}{Allievi 2015/2016}{Bozza Modulo 2}
+  \vhEntry{0.6}{29/05/2016}{Allievi 2015/2016}{Forza}
 \end{versionhistory}
 }
 
@@ -54,7 +86,7 @@
 
 \include{moduli}
 \include{mod01}
-%\include{mod02}
+\include{mod02}
 \include{mod05}
 \include{scouts}
 
