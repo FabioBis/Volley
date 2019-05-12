@@ -1,0 +1,90 @@
+\hyphenation{
+Bonfatti
+Karvonen
+Tarasconi
+Rossetti
+Maffi
+}
+
+
+\documentclass[a4paper, 12pt]{book}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% i comandi seguenti impediscono la scrittura in maiuscolo
+% dei nomi dei capitoli e dei paragrafi nelle intestazioni
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} % rimuove l’attuale contenuto dell’intestazione
+% e del pi\‘e di pagina
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt} % riserva spazio per la linea
+\fancypagestyle{plain}{%
+\fancyhead{} % ignora, nello stile plain, le intestazioni
+\renewcommand{\headrulewidth}{0pt} % e la linea
+}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{vhistory}
+\usepackage{hyperref}
+
+\title{Appunti Corso Primo Grado 2018/2019}
+\author{
+%Biselli Fabio
+%\and
+%Burgazzi Elisa 
+%\and
+%Cappellini Chiara
+%\and
+%Do Carmo Luciana
+%\and
+%Giovanelli Enrica
+%\and
+%Longhi Corrado
+%\and
+%Mazzari Francesco
+%\and
+%Monfasani Andrea
+%\and
+%Nedeljkovic Jovana
+%\and
+%Schenardi Simone
+%\and
+%Tommaso Cardinali
+%\and
+%Valentino Martina
+}
+\date {}
+
+\frenchspacing
+
+
+
+\newtheorem*{ross}{Appunti (Rossetti)}
+\newtheorem*{ross_es}{Possibile argomento d'esame (Rossetti)}
+\newtheorem*{libro}{Manuale FIPAV}
+
+\theoremstyle{remark}
+\newtheorem*{nota}{Nota}
+
+\theoremstyle{definition}
+\newtheorem{defi}{Definizione}
+
+\begin{document}
+{\samepage
+\maketitle
+\begin{versionhistory}
+  \vhEntry{0.1}{26/05/2019}{Biselli Fabio}{Prima bozza}
+\end{versionhistory}
+}
+
+\tableofcontents
+
+\include{moduli}
+\include{rossetti}
+
+\end{document}
